@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - Bar Chart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Motor Vehicle Crash Deaths per 100,000 People by Age and Gender, 2020</h2>
+    <div id="main">
+        <div class="tooltip"></div>
+    </div>
+    <div>
+        <label for="categorySelect">Death Counts Bigger Than: </label>
+        <select class="custom-select" id="bigger" onchange="onCategoryChanged()">
+            <option selected value="0">0</option>
+            <option value="200">200</option>
+            <option value="400">400</option>
+            <option value="600">600</option>
+            <option value="800">800</option>
+            <option value="1000">1000</option>
+            <option value="1200">1200</option>
+            <option value="1400">1400</option>
+            <option value="1600">1600</option>
+            <option value="1800">1800</option>
+            <option value="2000">2000</option>
+            <option value="2200">2200</option>
+            <option value="2400">2400</option>
+            <option value="2600">2600</option>
+            <option value="2800">2800</option>
+             <option value="3000">3000</option>
+        </select>
+    </div>
+    
+    
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+<script src="./bar_chart.js"></script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1 - Activity 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<div>
+		<svg id="single-bar">
+			<rect x=175 y=25 width=50 height=250 fill="plum"></rect>
+		</svg>
+	</div>
+
+	<div>
+		<svg if = "bar-chart" width="400" height="300">
+			<rect x=0 y=150 width=45 height=150 fill="plum"></rect>
+			<rect x=51 y=80 width=45 height=220 fill="plum"></rect>
+			<rect x=100 y=80 width=45 height=220 fill="plum"></rect>
+			<rect x=149 y=0 width=45 height=300 fill="plum"></rect>
+			<rect x=198 y=0 width=45 height=300 fill="plum"></rect>
+			<rect x=247 y=50 width=45 height=250 fill="plum"></rect>
+			<rect x=296 y=50 width=45 height=250 fill="plum"></rect>
+			<rect x=345 y=150 width=45 height=150 fill="plum"></rect>
+		</svg>
+	</div>
+
+	<div>
+		<svg id="line-chart">
+			<line  x1=0 y1=150 x2=51 y2=80 style="stroke:plum;stroke-width:2" />
+			<line  x1=51 y1=80 x2=100 y2=80 style="stroke:plum;stroke-width:2" />
+			<line  x1=100 y1=80 x2=149 y2=0 style="stroke:plum;stroke-width:2" />
+			<line  x1=149 y1=0 x2=198 y2=0 style="stroke:plum;stroke-width:2" />
+			<line  x1=198 y1=0 x2=247 y2=50 style="stroke:plum;stroke-width:2" />
+			<line  x1=247 y1=50 x2=296 y2=50 style="stroke:plum;stroke-width:2" />
+			<line  x1=296 y1=50 x2=345 y2=150 style="stroke:plum;stroke-width:2" />
+		</svg>
+	</div>
+
+	<div>
+		<svg id="pie-chart">
+			<circle cx="200" cy="150" r="120" fill=green stroke=black stroke-width=2 />
+			<path d=" M 80,150 L 200,150 L 200,30
+			A 120 120 0 1 1 80,150" fill=yellow
+				  stroke=black stroke-width=2 fill-opacity=1 />
+<!--			rx, ry, x-axis-rotation, large-arc-flag, sweep-flag, x, y-->
+
+		</svg>
+	</div>
+
+</body>
+
+</html>
